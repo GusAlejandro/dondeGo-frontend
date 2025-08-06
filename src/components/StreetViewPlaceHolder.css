@@ -1,0 +1,27 @@
+.streetview-placeholder {
+  width: 90vw;              /* Viewport width (not limited by parent) */
+  max-width: 1200px;        /* Looks great on big screens */
+  aspect-ratio: 16 / 9;
+  background-color: black;
+  border-radius: 12px;
+  margin: 2rem auto 0 auto; /* Centered */
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+
+
+
+/* Optional fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
